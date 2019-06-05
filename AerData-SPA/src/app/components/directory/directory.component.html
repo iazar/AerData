@@ -1,0 +1,13 @@
+<accordion>
+    <accordion-group *ngFor="let dir of directoriesList">
+        <button class="btn btn-link btn-block clearfix" accordion-heading>
+            <div class="pull-left float-left">{{ dir.name }}</div>
+            <span class="float-right pull-right">
+                <app-folder></app-folder>
+            </span>
+        </button>
+        <span class="badge badge-secondary">Path : {{ dir.path }}</span>
+        <br>
+        <span class="badge badge-primary">Size : {{ dir.size }} bytes</span>
+    </accordion-group>
+</accordion>
